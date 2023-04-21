@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+    <header>
+        <img src="/images/logo.png" class="logo" alt="StarBux Logo">
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                Menu
+            </li>
+            <li>
+                What's New
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2>It's Not Just a Coffee <br> It's <span>StarBux</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil officiis voluptatum libero perspiciatis reiciendis sequi, laboriosam perferendis quasi ut hic velit placeat voluptatem deserunt, accusantium omnis minus id eveniet tempore?</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imageBox">
+            <img src="images/img1.png" alt="" class="starbux">
+        </div>
+    </div>
+
+    <ul class="thumb">
+        <li><img src="images/thumb1.png" onClick="imgSlider('images/img1.png');changeColor('#017143')"alt=""></li>
+        <li><img src="images/thumb2.png" onClick="imgSlider('images/img2.png');changeColor('#eb7495')"alt=""></li>
+        <li><img src="images/thumb3.png" onClick="imgSlider('images/img3.png');changeColor('#d752b1')"alt=""></li>
+    </ul>
+
+    <ul class="sci">
+        <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+    </ul>
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector(".starbux").src = anything;
+    }
+
+    function changeColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+</body>
+
+</html>
